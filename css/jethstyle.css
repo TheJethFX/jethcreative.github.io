@@ -15,6 +15,10 @@ a:link, a:hover, a:active, a:visited {
   margin-bottom: 20px;
 }
 
+.row::before, .row:: {
+  display: inline-block;
+}
+
 /* HTML ELEMENTS */
 /*body {
   margin: 0;
