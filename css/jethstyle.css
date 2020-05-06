@@ -15,8 +15,21 @@ a:link, a:hover, a:active, a:visited {
   margin-bottom: 20px;
 }
 
-.row:before, .row:after {
-  display: none !important;
+/**
+Fixing bootstrap columns for safari
+ */
+.img-row:before, .img-row:after{
+  display: inline-block !important;
+}
+
+.img-row {
+  display: -ms-flexbox;
+  display: inline-flex; !important;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 /* HTML ELEMENTS */
