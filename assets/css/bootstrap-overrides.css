@@ -1,0 +1,14 @@
+/* BOOTSTRAP NAVBAR CENTER ELEMENTS WHILE NON-COLLAPSED */
+@media (min-width: 992px) {
+  .navbar-expand-lg, .navbar-collapse {
+      display: -ms-flexbox!important;
+      display: flex!important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      justify-content: center;
+  }
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
