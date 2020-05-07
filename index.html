@@ -2,24 +2,19 @@
   <head>
     <meta charset="utf-8"></meta>
     <title>Jeth Creative | Home</title>
-
-    <!-- STYLES -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="assets/css/jethstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/lightboxstyle.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	  <script src="assets/js/bootstrap-lightbox.js"></script>
-    <script src="assets/js/bootstrap-lightbox.min.js"></script>
-
-    <script>
-    // MDB Lightbox Init
-      $(function () {
-        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-      });
-    </script>
-
+    <!-- Javascript/JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- EkkoLightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
   </head>
+
   <body>
     <header style="max-width:100%; padding:20px">
       <div class="container">
@@ -37,34 +32,46 @@
       </div>
     </header>
 
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <div id="mdb-lightbox-ui"></div>
-        <div class="mdb-lightbox no-margin">
-          <figure class="col-md-3">
-            <a href="assets/images/3D/optim/SNOW-MOUNTAIN.jpg" data-size="1080x1350">
-              <img src="assets/images/3D/optim/SNOW-MOUNTAIN.jpg" class="img-fluid" />
-            </a>
-          </figure>
-        </div>
-      </div>
-    </div> -->
-
     <main style="padding:20px">
-      <div class="img-row">
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/SNOW-MOUNTAIN.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/ARCADIA.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/CRYSTAL.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/BUDDAH.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/DIAMONDS.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/TRAPPED.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/CHAINS.jpg" />
-        <img class="col-xs-12 col-md-3 img-spacing" src="assets/images/3D/optim/PORTAL.jpg" />
+      <div class="img-row" id="gallery">
+        <a href="assets/images/3D/optim/SNOW-MOUNTAIN.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/SNOW-MOUNTAIN.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/ARCADIA.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/ARCADIA.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/CRYSTAL.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/CRYSTAL.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/BUDDAH.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/BUDDAH.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/DIAMONDS.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/DIAMONDS.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/TRAPPED.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/TRAPPED.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/CHAINS.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/CHAINS.jpg" />
+        </a>
+        <a href="assets/images/3D/optim/PORTAL.jpg" data-toggle="lightbox" data-gallery="gallery" data-max-height="900" class="col-xs-12 col-md-3 img-spacing">
+          <img class="img-fluid" src="assets/images/3D/optim/PORTAL.jpg" />
+        </a>
       </div>
     </main>
 
     <footer class="footer">
         <p class="text-center no-gutters">social media links here</p>
     </footer>
+
+    <!-- EkkoLightbox Script -->
+  	<script>
+  		$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  		  event.preventDefault();
+  		  $(this).ekkoLightbox();
+  		});
+  	</script>
+
   </body>
 </html>
